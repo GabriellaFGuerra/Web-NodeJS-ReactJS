@@ -17,6 +17,7 @@ class Profile extends Component {
   render() {
     return (
       <center>
+        <h1>Meu Perfil</h1>
         <img src={img} width={250} height={250} alt="" />
         <h1>Dados pessoais</h1>
         <p>Gabriella Guerra, 19</p>

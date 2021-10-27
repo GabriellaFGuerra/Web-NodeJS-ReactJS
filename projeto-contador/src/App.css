@@ -1,0 +1,55 @@
+.counter {
+  margin-top: 3%;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 25%;
+  width: 15%;
+  height: 250px;
+}
+
+.counter h1 {
+  padding: 25%;
+}
+
+.buttons {
+  margin-top: 3%;
+  width: 15%;
+}
+
+.plus {
+  width: 100%;
+  grid-row: 1;
+  background-color: green;
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  font-style: bold;
+  border: none;
+  height: 100px;
+}
+
+.minus {
+  margin-top: 1.5%;
+  width: 100%;
+  grid-row: 1;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  font-style: bold;
+  border: none;
+  height: 100px;
+}
+
+button:hover {
+  font-size: 40px;
+}
+
+.plus:hover {
+  background-color: rgb(3, 66, 3);
+}
+
+.minus:hover {
+  background-color: rgb(110, 9, 9);
+}
