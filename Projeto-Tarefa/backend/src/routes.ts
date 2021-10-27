@@ -10,7 +10,7 @@ import { finishedTask } from './controller/TaskController';
 const routes = Router()
  
 routes.get('/home', (request: Request, response: Response) => {
-    return response.json({ message: 'Hello Turma 007!' })
+    return response.json({ message: 'Bem-vindo(a)!' })
 })
  
 routes.get('/tasks', getTasks)
