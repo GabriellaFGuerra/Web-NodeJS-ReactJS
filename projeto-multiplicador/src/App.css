@@ -1,0 +1,45 @@
+.counter {
+  margin-top: 3%;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 25%;
+  width: 15%;
+  height: 250px;
+}
+
+.counter h1 {
+  padding: 25%;
+}
+
+.inputs {
+  margin-top: 3%;
+  width: 15%;
+}
+
+.number1 {
+  width: 100%;
+  grid-row: 1;
+  height: 30px;
+}
+
+.number2 {
+  margin-top: 1.5%;
+  width: 100%;
+  grid-row: 1;
+  height: 30px;
+}
+.submit {
+  margin-top: 1.5%;
+  width: 15%;
+}
+.submit button {
+  width: 100%;
+  grid-row: 1;
+  background-color: green;
+  color: white;
+  text-align: center;
+  font-size: 32px;
+  font-style: bold;
+  height: 50px;
+}

@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
-  state = {
-    number: 0
-  }
-
   constructor(props) {
     super(props);
+    this.state = {
+      number: 0
+    }
+
     this.plus = this.plus.bind(this);
     this.minus = this.minus.bind(this);
   }
