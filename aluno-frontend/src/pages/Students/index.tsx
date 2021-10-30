@@ -42,6 +42,20 @@ const Students: React.FC = () => {
         history.push(`/aluno/${id}`)
     }
 
+    function viewStudent(id: number) {
+        history.push(`/alunos/${id}`)
+    }
+
+    async function notEnrolledStudent(id: number) {
+        await api.patch(`/students/${id}`)
+        loadStudents()
+    }
+
+    async function deleteStudent(id: number) {
+        await api.delete(`/students/${id}`)
+        loadStudents()
+    }
+
     return (
 
         <div className="container">
@@ -73,8 +87,9 @@ const Students: React.FC = () => {
                                 <td>{student.enrolled ? "Matriculado" : "Não matriculado"}</td>
                                 <td>
                                     <Button size="sm" variant="primary" onClick={() => editStudent(student.id)}>Editar</Button>{' '}
-                                    <Button size="sm" variant="warning">Visualizar</Button>{' '}
-                                    <Button size="sm" variant="danger">Remover</Button>{' '}
+                                    <Button size="sm" variant="success" disabled={student.enrolled == false} onClick={() => notEnrolledStudent(student.id)}>Encerrar matrícula</Button>{' '}
+                                    <Button size="sm" variant="warning" onClick={() => viewStudent(student.id)}>Visualizar</Button>{' '}
+                                    <Button size="sm" variant="danger" onClick={() => deleteStudent(student.id)}>Remover</Button>{' '}
                                 </td>
                             </tr>
                         ))
